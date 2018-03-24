@@ -1,4 +1,4 @@
-Crear repositorio github
-Crear ambiente virtual llamado web 
-Instalar paquetes para el ambiete virtual
-Crear cuenta y servidor en digitalOcean
+Crear repositorio en github
+Crear el ambiente virtual "web"
+Instalar los paquetes para este ambiente virtual
+Crear cuenta y servidor en DigitalOcean

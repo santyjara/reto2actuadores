@@ -1,4 +1,4 @@
-hlkwdnsafdm
-ndc /m
-fasjlnwad;sc
-wdaslndalsc
+Crear repositorio github
+Crear ambiente virtual llamado web 
+Instalar paquetes para el ambiete virtual
+Crear cuenta y servidor en digitalOcean

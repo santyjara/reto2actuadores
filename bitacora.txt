@@ -1,4 +1,0 @@
-Crear repositorio en github
-Crear el ambiente virtual "web"
-Instalar los paquetes para este ambiente virtual
-Crear cuenta y servidor en DigitalOcean

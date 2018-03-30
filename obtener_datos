@@ -1,0 +1,34 @@
+# coding=utf8
+import time
+import serial
+import json
+import requests
+
+# Iniciando conexión serial
+
+while(True):
+    arduinoPort = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+
+
+    # Retardo para establecer la conexión serial
+    time.sleep(1.8)
+
+    getSerialValue = int(arduinoPort.readline())
+    # getSerialValue = arduinoPort.read()
+    # getSerialValue = arduinoPort.read(6)
+
+    # print (getSerialValue)
+
+    #Cerrando puerto serial
+
+
+    time24 = time.strftime("%c")  # Formato de 24 horas
+
+    pythonDictionary = {'name':getSerialValue , 'time':time24}
+    dictionaryToJson = json.dumps(pythonDictionary)
+    print(dictionaryToJson)
+
+    headers = {'Content-type': 'application/json'}
+
+    rsp = requests.post('http://127.0.0.1:5000', dictionaryToJson, headers=headers)
+

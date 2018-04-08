@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+
+body{
+
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    background-color:#c4a1a2;
+
+}
+
+.portada img {
+    position: absolute;
+    width:100%;
+}
+
+.hora {
+    position: absolute;
+    color: #FFFFFF;
+    right: 42%;
+    top:5%;
+
+
+}
+.hora a{
+
+    color: #FFFFFF;
+
+}
+
+
+.texto  {
+    position:absolute;
+    top: 90px;
+    left: 80px;
+    color: #FFFFFF;
+    margin-right: 68%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 150%;
+    }
+
+.boton a {
+    position: absolute;
+    text-decoration:none;
+    display:block;
+    border; 3px solid #109B92;
+    width:230px;
+    height: 90px;
+    text-align:center;
+    right: 44%;
+    top:30%;
+
+    font-family: 'Anton', sans-serif;
+    font-size: 300%;
+     border: none;
+ background: white;
+ color: black;
+ padding: 10px;
+
+ border-radius: 5px;
+
+ box-sizing: border-box;
+ transition: all 500ms ease;
+
+    opacity: 0.8;
+}
+
+.boton:hover{
+         background: rgba(0,0,0,0);
+ color: black;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}

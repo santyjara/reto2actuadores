@@ -7,6 +7,7 @@ import requests
 # Iniciando conexión serial
 
 while(True):
+
     arduinoPort = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 
 
@@ -30,7 +31,7 @@ while(True):
 
     headers = {'Content-type': 'application/json'}
 
-    rsp = requests.post('http://127.0.0.1:5000/', dictionaryToJson, headers=headers)
+    rsp = requests.post('http://127.0.0.1:5000/data', dictionaryToJson, headers=headers)
 
     print(rsp)
 

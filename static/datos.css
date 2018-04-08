@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+
+body{
+
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    background-color:#c4a1a2;
+
+}
+
+.fondo img {
+
+    position: absolute;
+    width:100%;
+}
+.boton2 a {
+
+    position: absolute;
+    text-decoration:none;
+    display:block;
+    border; 3px solid #109B92;
+    width:200px;
+    height: 80px;
+    text-align:center;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #FFFFFF;
+    color: midnightblue;
+
+    font-family: 'Monoton', cursive;
+    font-size: 300%;
+
+}
+
+
+
+
+.tabla table{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 800;
+}
+
+.tabla th{
+
+    text-align:center;
+    background-color: white;
+    color:black;
+    font-size:1vw;
+    font-family: 'Syncopate', sans-serif;
+    padding: 4px 25px 4px 8px;
+}
+
+.tabla td{
+
+    text-align:center;
+    color: #ffffff;
+    border: 1px solid #e3e3e3;
+
+    font-size:1vw;
+    font-family: 'Open Sans', sans-serif;
+    padding: 4px 30px 4px 8px;
+
+}
+
+table tr:nth-child(odd) td{
+
+    background-color: gray;
+
+
+}
+
+
+.ttt {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+
+}

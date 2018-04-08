@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DATA</title>
+    <link rel="stylesheet" href="static/datos.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Fecha y hora', 'Valor'],
+          ['{{list[15][0]}}',  {{list[15][1]}}],
+          ['{{list[14][0]}}',  {{list[14][1]}}],
+          ['{{list[13][0]}}',  {{list[13][1]}}],
+          ['{{list[12][0]}}',  {{list[12][1]}}],
+          ['{{list[11][0]}}',  {{list[11][1]}}],
+          ['{{list[10][0]}}',  {{list[10][1]}}],
+          ['{{list[9][0]}}',  {{list[9][1]}}],
+          ['{{list[8][0]}}',  {{list[8][1]}}],
+          ['{{list[7][0]}}',  {{list[7][1]}}],
+          ['{{list[6][0]}}',  {{list[6][1]}}],
+          ['{{list[5][0]}}',  {{list[5][1]}}],
+          ['{{list[4][0]}}',  {{list[4][1]}}],
+          ['{{list[3][0]}}',  {{list[3][1]}}],
+          ['{{list[2][0]}}',  {{list[2][1]}}],
+          ['{{list[1][0]}}',  {{list[1][1]}}],
+          ['{{list[0][0]}}',  {{list[0][1]}}]
+        ]);
+
+        var options = {
+          title: 'Historial',
+          curveType: 'function',
+          legend: { position: 'top' },
+          backgroundColor: 'none',
+          colors: ['red','white','white','white','white'],
+          titleTextStyle: {    color: '#FFFFFF'  },
+          hAxis:{ textStyle: {   color: '#FFFFFF'  }},
+            vAxis:{ textStyle: {   color: '#FFFFFF'  }}
+
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+<body>
+
+
+
+    <div class="fondo">
+        <img src="static/fondo.jpg">
+    </div>
+
+    <div class="tabla">
+    <table>
+        <tr>
+            <th> DATE </th>
+            <th> VALUE </th>
+            <th> CLASIFICATION</th>
+
+        </tr>
+
+        {% for row in list %}
+
+         <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+         </tr>
+
+         {% endfor %}
+
+    </table>
+    </div>
+    <div class="boton2">
+        <a href="/"> HOME </a>
+    </div>
+    <div class="holaaa">
+    <div class="ttt" id="curve_chart" style="width: 850px; height: 500px"  ></div>
+    </div>
+
+</body>
+</html>

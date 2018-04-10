@@ -31,7 +31,7 @@ while(True):
 
     headers = {'Content-type': 'application/json'}
 
-    rsp = requests.post('http://127.0.0.1:5000/data', dictionaryToJson, headers=headers)
+    rsp = requests.post('http://192.241.152.78:8080/data', dictionaryToJson, headers=headers)
 
     print(rsp)
 

@@ -35,37 +35,34 @@ body{
 
 .texto  {
     position:absolute;
-    top: 90px;
-    left: 80px;
+    top: 70%;
+    left: 15%;
     color: #FFFFFF;
-    margin-right: 68%;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 150%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+
     }
 
 .boton a {
     position: absolute;
     text-decoration:none;
     display:block;
-    border; 3px solid #109B92;
+    border; 3px solid #B96716;
     width:230px;
     height: 90px;
     text-align:center;
     right: 44%;
     top:30%;
 
+    border-radius:10px;
+
     font-family: 'Anton', sans-serif;
     font-size: 300%;
-     border: none;
- background: white;
- color: black;
- padding: 10px;
+    background: #B96716;
+    color: #FFFFFF;
 
- border-radius: 5px;
-
- box-sizing: border-box;
- transition: all 500ms ease;
-
+    transition: all 500ms ease;
     opacity: 0.8;
 }
 
